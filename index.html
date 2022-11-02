@@ -876,14 +876,23 @@ depending on the type attribute.
 
 ======="HTML5 <keygen> Element> Element" please see line nmbr(491) in html theory code=======<br><br><br>
 
-The purpose of the <keygen> element is to provide a secure way to authenticate users.
-The <keygen> element specifies a key-pair generator field in a form.
-When the form is submitted, two keys are generated, one private and one public.
-The private key is stored locally, and the public key is sent to the server.
-The public key could be used to generate a client certificate to authenticate the user in the future.
+<pre>
+  The purpose of the <keygen> element is to provide a secure
+way to authenticate users.The <keygen> element 
+specifies a key-pair generator field in a form.
+When the form is submitted, two keys are generated,
+ one private and one public. The private key is stored
+ locally, and the public key is sent to the server.
+The public key could be used to generate a client 
+certificate to authenticate the user in the future.
+</pre><br><br>
 
 
-
+<form action="action_page.php">
+  Username: <input type="text" name="user">
+  Encryption: <keygen name="security">
+  <input type="submit">
+</form>
 
 
 
