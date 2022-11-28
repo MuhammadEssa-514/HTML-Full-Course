@@ -943,17 +943,131 @@ Example:
 <h4>A type attribute can be added to an ordered list, to define the type of the marker:</h4>
 <pre>
 Type                              Description
-type="1"
-The list items will be numbered with numbers (default)
-type="A"
-The list items will be numbered with uppercase letters
-type="a"
-The list items will be numbered with lowercase letters
-type="I"
-The list items will be numbered with uppercase roman numbers
-type="i"
-The list items will be numbered with lowercase roman numbers
+type="1"                          The list items will be numbered with numbers (default)
+type="A"                          The list items will be numbered with uppercase letters
+type="a"                          The list items will be numbered with lowercase letters
+type="I"                          The list items will be numbered with uppercase roman numbers
+type="i"                          The list items will be numbered with lowercase roman numbers
 </pre>
+
+
+<!-- ============================================================= -->
+
+<h2>Numbers:</h2>
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!-- ============================================================= -->
+<h2>Uppercase Letters:</h2>
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!-- ============================================================= -->
+<h2>Lowercase Letters:</h2>
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!-- ============================================================= -->
+<h2>Uppercase Roman Numbers:</h2>
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!-- ============================================================= -->
+<h2>Lowercase Roman Numbers:</h2>
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<!-- ============================================================= -->
+<h2>HTML Description Lists</h2>
+<h4>HTML also supports description lists.
+  A description list is a list of terms, with a description of each term.
+  The <"dl"> tag defines the description list, the <"dt"> tag defines the term (name), and the <"dd"> tag describes each term: </h4>
+Example
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+<!-- ============================================================= -->
+<h2>Nested HTML Lists</h2>
+<h4>List can be nested (lists inside lists):</h4>
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<!-- ============================================================= -->
+<h2>Horizontal Lists</h2>
+<h4>HTML lists can be styled in many different ways with CSS.
+  One popular way, is to style a list to be displayed horizontally:</h4>
+
+  Example
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+  <style>
+  ul#menu li {
+      display:inline;
+  }
+  </style>
+  </head>
+  
+  <body>
+  
+  <h2>Horizontal List</h2>
+  
+  <ul id="menu">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+  </ul> 
+  
+  </body>
+  </html>
+
+
+<!-- ============================================================= -->
+<h2>Chapter list Summary</h2>
+<h4>
+  <li>Use the HTML <"ul"> element to define an unordered list</li>
+  <li>Use the HTML "style" attribute to define the bullet style</li>
+  <li>Use the HTML <"ol"> element to define an ordered list</li>
+  <li>Use the HTML "type" attribute to define the numbering type</li>
+  <li>Use the HTML <"li"> element to define a list item</li>
+  <li>Use the HTML <"dl"> element to define a description list</li>
+  <li>Use the HTML <"dt"> element to define the description term</li>
+  <li>Use the HTML <"dd"> element to define the description data </li>
+  <li>Lists can be nested inside lists</li>
+  <li>List items can contain other HTML elements </li>
+  <li>Use the CSS property display:inline to display a list horizontally</li>
+</h4>
+
+
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+
+
 
 
 <br>======================================class 2,,10-22-2022===============================
