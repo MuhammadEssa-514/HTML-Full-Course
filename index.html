@@ -1142,11 +1142,49 @@ Examples of inline elements:
 
 <!-- ============================================================= -->
 
+<h2>Text Input</h2>
+<h4><"input" type="text"> defines a one-line input field for text input:</h4>
+Example:
 
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
 
 
 <!-- ============================================================= -->
+
+<h2>Radio Button Input</h2>
+<h4><"input" type="radio"> defines a radio button.
+  Radio buttons let a user select ONE of a limited number of choices:</h4>
+
+Example:
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+
 <!-- ============================================================= -->
+
+
+<h2>The Submit Button</h2>
+<h4><"input" type="submit"> defines a button for submitting a form to a form-handler.
+  The form-handler is typically a server page with a script for processing input data.
+  The form-handler is specified in the form's action attribute:</h4>
+
+Example:
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
 <!-- ============================================================= -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
