@@ -1196,6 +1196,96 @@ Example:
 
 
 <!-- ============================================================= -->
+
+<h2>The Method Attribute</h2>
+<h4>The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms:</h4>
+
+<h4>
+  <"form" action="action_page.php" method="get"> <br>
+    or: <br>
+    <"form" action="action_page.php" method="post">
+</h4>
+
+<!-- ============================================================= -->
+
+<h2>When to Use GET?</h2>
+<h4>You can use GET (the default method):
+  If the form submission is passive (like a search engine query), and without sensitive information.
+  When you use GET, the form data will be visible in the page address:</h4>
+
+<!-- ============================================================= -->
+
+<h2>When to Use POST?</h2>
+<h4>You should use POST:
+  If the form is updating data, or includes sensitive information (password).
+  POST offers better security because the submitted data is not visible in the page address.</h4>
+
+
+<!-- ============================================================= -->
+
+<h2>The Name Attribute</h2>
+<h4>To be submitted correctly, each input field must have a name attribute.
+  This example will only submit the "Last name" input field:</h4> 
+Example:
+
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<!-- ============================================================= -->
+
+<h2>Grouping Form Data with <"fieldset"></h2>
+ <h4>] The <"fieldset"> element groups related data in a form.
+  The <"legend"> element defines a caption for the <"fieldset"> element.</h4>
+
+  Example:
+  <form action="action_page.php">
+    <fieldset>
+      <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+<!-- ============================================================= -->
+
+<h1>HTML Form Elements</h1>
+
+
+
+<!-- ============================================================= -->
+
+<h2>The <"input"> Element</h2>
+<h4>The most important form element is the <"input"> element. 
+  The <"input"> element can vary in many ways, depending on the type attribute.</h4>
+
+<!-- ============================================================= -->
+
+
+<h2>The <"select"> Element (Drop-Down List)</h2>
+<h4>  The <"select"> element defines a drop-down list:</h4>
+
+  Example:
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
