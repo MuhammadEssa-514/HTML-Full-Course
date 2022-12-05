@@ -1341,8 +1341,47 @@ Example:
 
 <!-- ============================================================= -->
 
+<h2>Input Type: submit</h2>
+<h4><"input" type="submit"> defines a button for submitting form input to a form-handler.
+  The form-handler is typically a server page with a script for processing input data.
+  The form-handler is specified in the form's action attribute:</h4>
+  
+Example:
+<form action="action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
 
+<!-- ============================================================= -->
 
+<h2>Input Type: radio</h2>
+<h4><"input" type="radio"> defines a radio button.
+  Radio buttons let a user select ONLY ONE of a limited number of choices:</h4>
+
+Example:
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+
+<!-- ============================================================= -->
+
+<h2>Input Type: checkbox</h2>
+<h4><"input" type="checkbox"> defines a checkbox.
+  Checkboxes let a user select ZERO or MORE options of a limited number of choices.</h4>
+
+Example:
+<form>
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+
+<!-- ============================================================= -->
+<!-- ============================================================= -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
 
