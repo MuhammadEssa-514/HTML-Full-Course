@@ -1705,9 +1705,29 @@ Indicates that the form is not to be validated on submit:
 
 <!-- ============================================================= -->
 
+<h2>The autofocus Attribute</h2>
+<h4>The autofocus attribute is a boolean attribute.
+  When present, it specifies that an <'input'> element should automatically get focus when the page loads.</h4>
 
+Example::: <br><br>
+Let the "First name" input field automatically get focus when the page loads: <br><br>
+First name:<input type="text" name="fname" autofocus>
 
 <!-- ============================================================= -->
+
+<h2>The form Attribute</h2>
+<h4>The form attribute specifies one or more forms an <input> element belongs to.
+  Tip: To refer to more than one form, use a space-separated list of form ids.</h4>
+
+Example;:
+An input field located outside the HTML form (but still a part of the form):
+<form action="action_page.php" id="form1">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+
 <!-- ============================================================= -->
 
 
