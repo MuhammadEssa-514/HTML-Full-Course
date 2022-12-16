@@ -1730,7 +1730,19 @@ Last name: <input type="text" name="lname" form="form1">
 
 <!-- ============================================================= -->
 
+The formenctype Attribute
+The formenctype attribute specifies how the form-data should be encoded when submitting it to the server (only for forms with method="post").
+The formenctype attribute overrides the enctype attribute of the <form> element.
+The formenctype attribute is used with type="submit" and type="image".
 
+Example
+Send form-data that is default encoded (the first submit button), and encoded as "multipart/form-data" (the second submit button):
+<form action="demo_post_enctype.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
 
 <!-- ============================================================= -->
 <!-- ============================================================= -->
