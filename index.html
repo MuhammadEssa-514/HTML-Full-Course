@@ -1762,6 +1762,26 @@ The second submit button overrides the HTTP method of the form:
 </form>
 
 <!-- ============================================================= -->
+
+<h2>The formnovalidate Attribute</h2>
+<h4>The novalidate attribute is a boolean attribute.
+  When present, it specifies that the <'input'> element should not be validated when submitted.
+  The formnovalidate attribute overrides the novalidate attribute of the <'form'> element.
+  The formnovalidate attribute can be used with type="submit".</h4>
+
+Example:::
+A form with two submit buttons (with and without validation):
+<form action="action_page.php">
+  E-mail: <input type="email" name="userid"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formnovalidate value="Submit without validation">
+</form>
+
+<!-- ============================================================= -->
+
+
+
+<!-- ============================================================= -->
 <!-- ============================================================= -->
 <!-- ============================================================= -->
 
