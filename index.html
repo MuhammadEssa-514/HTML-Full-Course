@@ -1851,9 +1851,20 @@ Select images: <input type="file" name="img" multiple>
 
 <!-- ============================================================= -->
 
+<h2>The pattern Attribute</h2>
+<h4>The pattern attribute specifies a regular expression that the <"input"> element's value is checked against.
+  The pattern attribute works with the following input types: text, search, url, tel, email, and password.
+  Tip: Use the global title attribute to describe the pattern to help the user.
+  Tip: Learn more about regular expressions in our JavaScript tutorial.</h4>
 
+Example::
+An input field that can contain only three letters (no numbers or special characters):
+Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
 
 <!-- ============================================================= -->
+
+
+
 <!-- ============================================================= -->
 <!-- ============================================================= -->
 
