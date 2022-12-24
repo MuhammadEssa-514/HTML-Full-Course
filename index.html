@@ -1979,6 +1979,40 @@ Ogg                   video/ogg
   There are also DOM events that can notify you when an audio begins to play, is paused, etc.</h4>
 
 <!-- ============================================================= -->
+
+<h1>HTML5 Drag and Drop</h1>
+
+<h2>HTML Drag and Drop Example</h2>
+<h4>The example below is a simple drag and drop example:</h4>
+
+example::
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="336" height="69">
+
+
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
 <!-- ============================================================= -->
 
 
